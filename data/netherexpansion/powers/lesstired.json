@@ -1,0 +1,9 @@
+{
+  "type": "origins:modify_exhaustion",
+  "name": "Spiritual Boost",
+  "description": "You can run longer distances before you get tired.",
+  "modifier": {
+    "value": -0.5,
+    "operation": "multiply_base"
+  }
+}

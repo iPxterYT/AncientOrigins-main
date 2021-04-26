@@ -1,0 +1,24 @@
+{
+	"powers": [
+		"origins:nether_spawn",
+		"origins:fire_immunity",
+                "origins:translucent",
+				"netherexpansion:size_mod_dummy",
+                "netherexpansion:slownessstrike",
+                "netherexpansion:lesstired",
+                "netherexpansion:tobright",
+                "netherexpansion:slownessimmunity",
+                "netherexpansion:soulfeast",
+                "netherexpansion:1lessheart",
+                "netherexpansion:necrovore",
+                "netherexpansion:outofplace",
+                "netherexpansion:undead",
+                "netherexpansion:lava_swimming",
+                "netherexpansion:lava_vision"
+	],
+	"icon": "minecraft:soul_sand",
+	"order": 7,
+	"impact": 3,
+	"name": "The Damned",
+	"description": "Those faces in the soulsand... we still hear them screaming."
+}

@@ -1,0 +1,19 @@
+{
+	"type": "origins:modify_food",
+	"name": "Pescatarian",
+	"description": "Fish is the only good source of food for you. Sure you can eat other things but its all disgusting and dry.",
+	"item_condition": {
+		"type": "origins:ingredient",
+		"ingredient": {
+			"tag": "alien:fish"
+		}
+	},
+	"food_modifier": {
+		"operation": "multiply_base",
+		"value": 1
+	},
+	"saturation_modifier": {
+		"operation": "multiply_base",
+		"value": 1
+	}
+}

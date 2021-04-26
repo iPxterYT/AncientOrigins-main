@@ -1,0 +1,30 @@
+{
+  "type": "origins:restrict_armor",
+"name": "Tentacle Legs",
+"description": "These boots were NOT made for walking. You have slowness on the ground.",
+"hidden":false,
+"head": {
+  "type": "origins:armor_value",
+  "comparison": "<",
+  "compare_to": -1,
+"inverse":true
+},
+  "chest": {
+      "type": "origins:ingredient",
+      "ingredient":{
+        "item": "minecraft:elytra"
+      }
+  },
+"legs": {
+  "type": "origins:armor_value",
+  "comparison": "<",
+  "compare_to": -1,
+"inverse":true
+},
+"feet": {
+  "type": "origins:armor_value",
+  "comparison": "<",
+  "compare_to": -1,
+"inverse":true
+}
+}

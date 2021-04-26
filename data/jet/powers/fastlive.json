@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_xp_gain",
+  "modifier": {
+    "operation": "multiply_base",
+    "value": 0.1
+  },
+  "hidden": false,
+  "name":"Hyperaction",
+  "description":"You live in the moment. You gain more XP but drain hunger faster."
+}

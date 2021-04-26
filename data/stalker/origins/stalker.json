@@ -1,0 +1,11 @@
+{
+	"powers": [
+            "stalker:ghost"
+	],
+	"icon": "arrow",
+	"order": 6,
+	"impact": 2,
+	"unchoosable": true,
+	"name": "Stalker",
+	"description": "(UNCHOOSEABLE) All you've ever known is the wild and how to hunt. You adapted and learned how to hide in the darkness, and evolved to become a proficient hunter in every right."
+}

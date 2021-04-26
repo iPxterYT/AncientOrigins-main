@@ -1,0 +1,10 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 100,
+  "hidden": true,
+  "entity_action": {
+      "type": "origins:execute_command",
+        "command": "particle minecraft:falling_honey ~ ~0.6 ~ 0.3 0.3 0.3 1 10 normal @s",
+        "permission_level": 4
+   }
+}

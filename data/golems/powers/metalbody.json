@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "name": "Metal Body",
+    "description": "Their whole body is metal-even on the inside. This isn't armor, it's their flesh.",
+    "modifier": {
+    "attribute": "minecraft:generic.max_health",
+    "value": 16,
+    "operation": "addition"
+   }
+}

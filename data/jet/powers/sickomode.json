@@ -1,0 +1,12 @@
+{
+	"type": "origins:resource",
+	"name":"SICK",
+	"min": 0,
+	"max": 700,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 8
+	},
+	"hidden": true
+}

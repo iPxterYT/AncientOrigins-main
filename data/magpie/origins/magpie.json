@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"magpie:size",
+		"magpie:size_mod_dummy",
+		"magpie:feathered",
+		"origins:vegetarian",
+		"origins:fragile"
+	],
+	"icon":"minecraft:diamond",
+	"order":1,
+	"unchoosable": false,
+	"impact":2,
+	"name": "Magpie",
+	"description": "A bird of greed and debatable intellgence."
+}

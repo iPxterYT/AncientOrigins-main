@@ -1,0 +1,11 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Inflated",
+    "description": "The natural gases inside of you have the unfortunate side effect of making you a bit... w i d e. Just stay away from DeviantArt and you'll be fine!",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function usernull:inflation",
+      "permission_level": 4
+    },
+    "interval": 50
+  }

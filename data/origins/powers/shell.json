@@ -1,0 +1,269 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+	"build": {
+		"type": "origins:action_over_time",
+		"interval": 50,
+		"hidden": false,
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:change_resource",
+					"resource": "origins:shellbuild",
+					"change": 1
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:block.shulker_box.open master @s ~ ~ ~ 1 2",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:feed",
+					"food": -1,
+					"saturation": 0
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": "==",
+					"compare_to": 12,
+					"inverted": true
+				}
+			]
+		}
+	},
+	"armor1": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"armor2": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 2
+		}
+	},
+	"armor3": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 3
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 3
+		}
+	},
+	"armor4": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 4
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 4
+		}
+	},
+	"armor5": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 5
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 5
+		}
+	},
+	"armor6": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 6
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 6
+		}
+	},
+	"armor7": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 7
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 7
+		}
+	},
+	"armor8": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 8
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 8
+		}
+	},
+	"armor9": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 9
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 9
+		}
+	},
+	"armor10": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 10
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 10
+		}
+	},
+	"armor11": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 11
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 11
+		}
+	},
+	"armor12": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifier": {
+			"attribute": "generic.armor",
+			"operation": "addition",
+			"value": 12
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:shellbuild",
+			"comparison": "==",
+			"compare_to": 12
+		}
+	},
+	"destroy": {
+		"type": "origins:self_action_when_hit",
+		"entity_action": {
+			"type": "origins:chance",
+			"action": {
+				"type": "origins:change_resource",
+				"resource": "origins:shellbuild",
+				"change": -1
+			},
+			"chance": 0.40
+		},
+		"cooldown": 1
+	},
+	"sound": {
+		"type": "origins:self_action_when_hit",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "playsound minecraft:entity.shulker.hurt master @s ~ ~ ~ 1 1",
+			"permission_level": 4
+		},
+		"cooldown": 1
+	},
+	"release": {
+		"type": "origins:active_self",
+		"key": {
+			"key": "key.origins.secondary_active",
+			"continuous": false
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:change_resource",
+					"resource": "origins:shellbuild",
+					"change": -12
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "playsound entity.shulker.shoot master @s ~ ~ ~ 1 2",
+					"permission_level": 4
+				}
+			]
+		},
+		"cooldown": 10,
+		"hud_render": {
+			"should_render": false
+		}
+	}
+}

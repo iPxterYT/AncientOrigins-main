@@ -1,0 +1,33 @@
+{
+	"type": "origins:modify_food",
+	"hidden":true,
+	"item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient":{
+          "tag": "ender_dragon:fruit"
+        }
+      },
+      {
+        "type": "origins:food"
+      }
+    ]
+  },
+  "food_modifier": {
+	"name": "nom",
+     "value": 1,
+     "operation": "addition"
+  },
+  "saturation_modifier": {
+	"name": "om",
+     "value": 1,
+     "operation": "addition"
+  },
+  "entity_action": {
+  "type": "origins:execute_command",
+  "command": "playsound minecraft:entity.parrot.imitate.ender_dragon player @a[distance=..50] ~ ~ ~ ",
+  "permission_level": 4
+}
+}

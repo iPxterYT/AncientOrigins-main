@@ -1,0 +1,23 @@
+{
+	"type": "origins:multiple",
+	"loading_priority": 1,
+	"one": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 0.1,
+			"saturation": 0.1
+		},
+		"interval":40
+
+	},
+	"two": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Natural Armor health bonus",
+			"attribute": "minecraft:generic.armor",
+			"value": 6.0,
+			"operation": "addition"
+		}
+	}
+}

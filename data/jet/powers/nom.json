@@ -1,0 +1,43 @@
+{
+	"type": "origins:modify_food",
+	"hidden":true,
+	"item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient":{
+          "tag": "jet:raw"
+        }
+      },
+      {
+        "type": "origins:food"
+      }
+    ]
+  },
+  "food_modifier": {
+	"name": "nom",
+     "value": 1.3,
+     "operation": "addition"
+  },
+  "saturation_modifier": {
+	"name": "om",
+     "value": 1,
+     "operation": "addition"
+  },
+  "entity_action": {
+  "type":"origins:and",
+  "actions":[
+  {
+  "type": "origins:execute_command",
+  "command": "playsound minecraft:entity.fox.eat player @a[distance=..50] ~ ~ ~ ",
+  "permission_level": 4
+  },
+  {
+	"type": "origins:change_resource",
+	"resource":"jet:sickomode",
+	"change":-200
+  }
+  ]
+}
+}

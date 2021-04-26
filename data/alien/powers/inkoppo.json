@@ -1,0 +1,37 @@
+{
+	"type": "origins:attacker_action_when_hit",
+        "hidden": true,
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+			"effect": "minecraft:blindness",
+			"amplifier": 1,
+			"duration": 200
+		}
+	},
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:name",
+				"name": "mob"
+			},
+			{
+				"type": "origins:name",
+				"name": "player"
+			},
+			{
+				"type": "origins:name",
+				"name": "sting"
+			},
+			{
+				"type": "origins:name",
+				"name": "thorns"
+			}
+		]
+	},
+	"cooldown": 500,
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 8
+	}
+}

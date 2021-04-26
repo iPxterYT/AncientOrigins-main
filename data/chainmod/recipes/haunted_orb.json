@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#n#",
+        "nPn",
+        "#n#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "P": {
+            "item": "minecraft:phantom_membrane"
+        }
+    },
+    "result": {
+        "item": "nebchain:haunted_orb",
+        "count": 1
+    }
+}

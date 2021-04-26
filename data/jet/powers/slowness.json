@@ -1,0 +1,46 @@
+{
+	"type": "origins:action_over_time",
+	"hidden":true,
+	"interval":5,
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "effect give @s minecraft:slowness 5 2 true",
+		"permission_level": 4
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+
+				"type": "origins:block_in_radius",
+				"inverted":true,
+			
+				"block_condition": {
+									"type": "origins:in_tag",
+									"tag": "jet:seelookigotmydiamondtester2"
+								},
+				"radius": 3,
+				"shape": "cube",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:or",
+				"conditions": [{
+						"type": "origins:in_block_anywhere",
+						"block_condition": {
+							"type": "origins:block",
+							"block": "minecraft:water"
+						}
+					},
+					{
+						"type": "origins:in_rain"
+					}
+				]
+
+			}
+
+
+		]
+
+	}
+	}

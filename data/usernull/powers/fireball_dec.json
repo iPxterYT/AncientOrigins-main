@@ -1,0 +1,15 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+   
+      "type": "origins:change_resource",
+      "resource":"usernull:fireball_deathcheck",
+	  "change":-200
+    
+  },
+  "cooldown": 200,
+  "hud_render": {
+    "should_render": false
+  },
+  "hidden": true
+}

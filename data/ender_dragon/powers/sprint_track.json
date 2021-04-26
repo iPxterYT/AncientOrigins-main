@@ -1,0 +1,23 @@
+{
+	"type": "origins:resource",
+	"min": 0,
+	"max": 25,
+	"hud_render": {
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:dimension",
+					"dimension": "minecraft:the_end"
+				},
+				{
+					"type": "origins:power_active",
+					"power": "ender_dragon:air_swimming"
+				}
+			]
+		},
+		"should_render": true,
+		"bar_index": 4
+
+	},
+	"hidden": true
+}

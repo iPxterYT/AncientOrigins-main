@@ -1,0 +1,19 @@
+{
+	"type": "origins:self_action_on_kill",
+	"entity_action":{
+		"type":"origins:feed",
+		"food":1,
+		"saturation":0.5
+	},
+	"damage_condition":{
+		"type":"origins:name",
+		"name":"player"
+	},
+	"cooldown":250,
+	"hud_render":{
+		"should_render": false,
+        "bar_index": 4
+	},
+	"name":"SOULSTEAL",
+	"description": "THEY WERE WRONG"
+}

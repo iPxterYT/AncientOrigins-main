@@ -1,0 +1,105 @@
+{
+	"type": "origins:multiple",
+	"name": "Shelled Up",
+	"description": "Holding shift slowly grows a shell around your body. Growing it takes some time and energy, and your shell becomes heavier as it grows. Press your secondary button to remove the shell.",
+	"shell1": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"value": -0.005,
+			"operation": "addition",
+			"tick_rate": 5
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": ">=",
+					"compare_to": 2
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": "<=",
+					"compare_to": 4
+				}
+			]
+		}
+	},
+	"shell2": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"value": -0.015,
+			"operation": "addition",
+			"tick_rate": 5
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": ">=",
+					"compare_to": 5
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": "<=",
+					"compare_to": 7
+				}
+			]
+		}
+	},
+	"shell3": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"value": -0.025,
+			"operation": "addition",
+			"tick_rate": 5
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": ">=",
+					"compare_to": 8
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": "<=",
+					"compare_to": 10
+				}
+			]
+		}
+	},
+	"shell4": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"value": -0.030,
+			"operation": "addition",
+			"tick_rate": 5
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": ">=",
+					"compare_to": 11
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins:shellbuild",
+					"comparison": "<=",
+					"compare_to": 12
+				}
+			]
+		}
+	}
+}

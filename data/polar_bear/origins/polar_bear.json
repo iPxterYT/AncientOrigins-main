@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"polar_bear:apex",
+		"polar_bear:bulk",
+		"polar_bear:bulksize",
+"polar_bear:huntbegins",
+"polar_bear:huntbeginsglowing",
+		"polar_bear:metabolism",
+		"origins:carnivore",
+		"polar_bear:respawnheal",
+		"polar_bear:semiaquatic",
+		"polar_bear:thickfur"
+	],
+	"icon": "minecraft:packed_ice",
+	"order": 4,
+	"impact": 3,
+	"name": "Polar Bear",
+	"description": "Apex predators of frozen tundras, Polar Bears are a sample of evolutionary perfection in its finest! The sheer strength of these magnificent creatures, as well as their ability to remain in water for long amounts of time makes them perfect for their frozen homes. (Warning: This origin is intended to be high-risk high-reward. If you are expecting surviving with this origin will be easy, do not pick it.)"
+}

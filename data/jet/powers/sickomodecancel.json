@@ -1,0 +1,15 @@
+{
+  "type": "origins:self_action_when_hit",
+  "hidden":true,
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource":"jet:sickomode",
+	"change":-100
+  },
+  "damage_condition": {
+    "type": "origins:amount",
+    "comparison": ">=",
+    "compare_to": 3.0
+  },
+  "cooldown": 20
+}

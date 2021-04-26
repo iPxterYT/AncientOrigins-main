@@ -1,0 +1,26 @@
+{
+  "type": "origins:action_on_callback",
+  "hidden":true,
+  "entity_action_respawned": {
+    "type": "origins:and",
+    "actions":
+	[
+		{
+						"type": "origins:change_resource",
+						"resource": "origins:f",
+						"change": -1000
+		},
+		{
+						"type": "origins:change_resource",
+						"resource": "origins:g",
+						"change": -1000
+		},
+		{
+		"type":"origins:execute_command",
+		"command":"playsound minecraft:entity.cat.ambient player @a[distance=..50] ~ ~ ~ 1 1",
+			"permission_level":4
+		}
+		
+	]
+  }
+}

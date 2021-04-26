@@ -1,0 +1,25 @@
+{
+	"powers": [
+		"alien:heatweakness",
+		"alien:camouflage",
+		"alien:8arms",
+		"alien:hydrodynamic",
+		"alien:pescatarian",
+		"alien:ink",
+		"alien:inkoppo",
+		"alien:pescatarianreverse",
+                "alien:slowland",
+		"origins:water_breathing",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:like_water",
+		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions"
+	],
+	"icon": "ink_sac",
+	"order": 7,
+	"impact": 3,
+	"name": "Inkling",
+	"description": "Life started in the oceans, life continues in the oceans. Why is it punching a tree?"
+}

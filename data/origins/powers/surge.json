@@ -1,0 +1,218 @@
+{
+    "type": "origins:multiple",
+    "name": "Surge of Fire",
+    "description": "On use the user becomes set on fire and cannot be extinguished by most means for 10 seconds. Due to sudden burst of fire, the user takes 1 heart of damage as recoil on activation (not lethal) and hunger for the ability duration. For a couple seconds you feel slow after the effects wear off.",
+    "heat": {
+        "type": "origins:resource",
+        "name": "Heat",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 6
+        },
+        "hidden": true
+    },
+    "counter": {
+        "type": "origins:resource",
+        "name": "Internal Counter",
+        "min": 0,
+        "max": 200,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 7,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "origins:surge_counter",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        },
+        "hidden": true
+    },
+    "ability": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:heal",
+                    "amount": -2
+                },
+                {
+                    "type": "origins:exhaust",
+                    "amount": 10
+                },
+                {
+                    "type": "origins:set_on_fire",
+                    "duration": 1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:surge_heat",
+                    "change": 1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:surge_counter",
+                    "change": 200
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 200,
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins:surge_heat",
+                        "change": -1
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.blaze.ambient"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle flame ~ ~ ~ 0 1 0 0.1 25",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "cooldown": 800,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 19
+        },
+        "condition": {
+            "type": "origins:health",
+            "comparison": ">",
+            "compare_to": 2
+        }
+    },
+    "reignite": {
+        "hidden": true,
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "origins:surge_heat",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "if_action": {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "resource": "origins:surge_counter",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:set_on_fire",
+                            "duration": 1
+                        },
+                        {
+                            "type": "origins:exhaust",
+                            "amount": 0.065
+                        },
+                        {
+                            "type": "origins:change_resource",
+                            "resource": "origins:surge_counter",
+                            "change": -1
+                        }
+                    ]
+                },
+                "else_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:change_resource",
+                            "resource": "origins:surge_heat",
+                            "change": -1
+                        },
+                        {
+                            "type": "origins:change_resource",
+                            "resource": "origins:surge_counter",
+                            "change": -200
+                        },
+                        {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:slowness",
+                                "duration": 50,
+                                "amplifier": 1
+                            }
+                        },
+                        {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:mining_fatigue",
+                                "duration": 50,
+                                "amplifier": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            "else_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "origins:surge_counter",
+                        "change": -200
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "origins:surge_heat",
+                        "change": -1
+                    }
+                ]
+            }
+        }
+    },
+    "disable_on_death": {
+        "type": "origins:action_on_callback",
+        "hidden": true,
+        "entity_action_respawned": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:surge_heat",
+                    "change": -1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:surge_counter",
+                    "change": -200
+                }
+            ]
+        },
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:surge_heat",
+                    "change": -1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:surge_counter",
+                    "change": -200
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:last_ditch_effort_cooldown",
+                    "change": 3600
+                }
+            ]
+        }
+    }
+}

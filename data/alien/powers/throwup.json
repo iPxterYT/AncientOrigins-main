@@ -1,0 +1,17 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "potion",
+    "speed": 2,
+    "divergence": 1,
+    "sound": "minecraft:entity.llama.spit",
+    "name": "Acid Reflux",
+    "description": "It's exactly what you think it is, you are an alien after all.",
+    "tag": "{Item:{id:\"minecraft:slime_block\",Count:1,tag:{CustomPotionColor:3136314,CustomPotionEffects:[{Id:2,Amplifier:1,Duration:100},{Id:19,Amplifier:2,Duration:80}]}}}",
+    "key": "primary",
+    "cooldown": 200,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 1
+    }
+
+}

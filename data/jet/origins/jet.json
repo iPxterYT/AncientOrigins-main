@@ -1,0 +1,36 @@
+{
+	"powers": [
+		"jet:cutscene",
+		"jet:extras",
+		"jet:fastlive",
+		"jet:sickomode",
+		"jet:cant",
+		"jet:reg",
+		"jet:fboost",
+		"jet:boostmode",
+		"jet:hp",
+		"jet:kb",
+		"jet:ouch",
+		"jet:wingless",
+		"jet:tail",
+		"jet:sleepyhead",
+		"jet:slowness",
+		"jet:weathered",
+		"jet:nom",
+		"jet:soulsuck",
+		"jet:resource",
+		"jet:sickomodecancel",
+		"jet:sickoreduce",
+		"jet:toggle",
+		"jet:size_mod_dummy",
+		"jet:scream"
+		
+
+	],
+	"icon":"minecraft:sweet_berries",
+	"order":4,
+	 "unchoosable": false,
+	"impact":2,
+	"name": "Kitsune",
+	"description": "[§k jdkedm]§r ] originally did research into these magical fox relatives until their body was §khdujdsj §rin several piec§kes apart"
+}

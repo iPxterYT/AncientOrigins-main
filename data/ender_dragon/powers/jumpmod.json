@@ -1,0 +1,9 @@
+{
+  "type": "origins:modify_jump",
+  "hidden": true,
+  "modifier": {
+    "operation": "multiply_total",
+    "value": 0.0000001
+    }
+
+}

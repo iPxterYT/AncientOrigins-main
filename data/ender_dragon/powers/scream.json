@@ -1,0 +1,11 @@
+{
+  "name": "Scales",
+  "hidden":true,
+  "description": "Your thick skin prevents against magic and normal damage, but prevents most armors from fitting.",
+  "type": "origins:action_on_callback",
+  "entity_action_respawned": {
+    "type": "origins:execute_command",
+    "command": "function ender_dragon:respawn",
+    "permission_level": 4
+  }
+}

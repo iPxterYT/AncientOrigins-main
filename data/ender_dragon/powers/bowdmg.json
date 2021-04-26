@@ -1,0 +1,11 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "It's All New",
+  "description": "You have no idea how to use ranged attacks. Why would you THROW a weapon?",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "ender_dragon:ranged"
+    }
+  }
+}

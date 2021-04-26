@@ -1,0 +1,183 @@
+{
+
+	"type": "origins:multiple",
+	"hidden": true,
+	"boosteffect": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"hidden": true,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "jet:toggle",
+				"comparison": "==",
+				"compare_to": 1
+			},
+			"if_action": {
+				"type": "origins:and",
+				"actions": [{
+						"type": "origins:execute_command",
+						"command": "effect give @s minecraft:glowing 10 0 true",
+						"permission_level": 4
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "particle minecraft:soul_fire_flame ~ ~ ~ 0 0 0 0.3 20 normal",
+						"permission_level": 4
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "effect give @s minecraft:speed 5 2 true",
+						"permission_level": 4
+					}
+				]
+			}
+		}
+	},
+
+	"check": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"hidden": true,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "jet:sickomode",
+				"comparison": "==",
+				"compare_to": 0
+			},
+			"if_action": {
+				"type": "origins:change_resource",
+				"resource": "jet:toggle",
+				"change": -1
+			}
+		}
+
+	},
+	"pog2": {
+		"type": "origins:action_over_time",
+		"interval": 250,
+		"hidden": true,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "jet:cutscene",
+				"comparison": "==",
+				"compare_to": 0
+			},
+			"if_action": {
+				"type": "origins:execute_command",
+				"command": "gamerule showDeathMessages true",
+				"permission_level": 4
+			}
+
+		}
+	},
+	"pog": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"hidden": true,
+		"condition": {
+				"type": "origins:equipped_item",
+				"inverted":true,
+				"equipment_slot": "chest",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:elytra"
+					}
+
+				}
+			},
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "jet:resource",
+			"change": 12
+		}
+	},
+	"pog2": {
+		"type": "origins:action_over_time",
+		"interval": 40,
+		"hidden": true,
+		"condition": {
+				"type": "origins:equipped_item",
+				"equipment_slot": "chest",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:elytra"
+					}
+
+				}
+			},
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "jet:resource",
+			"change": 2
+		}
+	},
+	"mom": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"hidden": true,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "jet:toggle",
+				"comparison": "==",
+				"compare_to": 1
+			},
+			"if_action": {
+				"type": "origins:and",
+				"actions": [{
+						"type": "origins:change_resource",
+						"resource": "jet:resource",
+						"change": 23
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "jet:sickomode",
+						"change": -20
+					}
+				]
+			}
+
+		}
+
+	},
+	"mom2": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"hidden": true,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:equipped_item",
+				"equipment_slot": "chest",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:elytra"
+					}
+
+				}
+			},
+			"if_action": {
+
+				"type": "origins:change_resource",
+				"resource": "jet:sickomode",
+				"change": -1
+
+
+			}
+
+		}
+
+	}
+
+
+}

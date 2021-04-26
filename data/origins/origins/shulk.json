@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"origins:shulker_inventory",
+		"origins:meme",
+		"origins:strong_arms",
+		"origins:strong_arms_break_speed",
+		"origins:no_shield",
+		"origins:size_mod_dummy",
+		"origins:giveach",
+		"origins:shell",
+		"origins:shellup",
+		"origins:shellbuild"
+	],
+	"icon": "minecraft:shulker_shell",
+	"loading_priority": 1,
+	"order": 4,
+	"impact": 1
+}

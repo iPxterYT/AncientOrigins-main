@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+		"attribute": "minecraft:generic.attack_damage",
+		"operation": "multiply_base",
+		"value": 1
+	},
+  "hidden": true,
+  "name": "Fucking laser sight",
+  "description": "OOF"
+}

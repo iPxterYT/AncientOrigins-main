@@ -1,0 +1,16 @@
+{
+    "type": "origins:modify_damage_taken",
+	"hidden":true,
+    "modifier": {
+     "name": "OW",
+     "value": -0.5,
+     "operation": "multiply_total"
+
+    },
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "thorns"
+		
+
+    }
+}

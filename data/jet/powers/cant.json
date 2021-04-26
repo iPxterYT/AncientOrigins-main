@@ -1,0 +1,22 @@
+{
+	"type": "origins:prevent_item_use",
+	"hidden":true,
+	"item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient":{
+          "tag": "jet:raw"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient":{
+          "item": "minecraft:ender_pearl"
+        }
+      }
+    ]
+}
+}
+       

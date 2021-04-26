@@ -1,0 +1,14 @@
+{
+  "type": "origins:action_on_callback",
+  "hidden": true,
+  "entity_action_respawned": {
+    "type": "origins:execute_command",
+    "command": "effect give @s minecraft:regeneration 5 10",
+    "permission_level": 4
+  },
+  "entity_action_chosen":{
+    "type": "origins:execute_command",
+    "command": "effect give @s minecraft:regeneration 5 10",
+    "permission_level": 4
+  }
+}

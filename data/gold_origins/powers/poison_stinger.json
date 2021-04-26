@@ -1,0 +1,19 @@
+{
+  "type": "origins:target_action_on_hit",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:poison",
+      "amplifier": 1,
+      "duration": 60
+    } 
+  },
+  "damage_condition": {
+    "type": "origins:amount",
+    "comparison": "<=",
+    "compare_to": 2.0
+  },
+  "cooldown": 0,
+  "name": "Poison Stinger",
+  "description": "Your punches inflict minor poison."
+}

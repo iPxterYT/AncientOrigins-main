@@ -1,0 +1,13 @@
+{
+	"type": "origins:resource",
+	"name":"cutscene",
+	"min": 0,
+	"max": 1,
+	  	"hud_render": {
+    	"should_render": false,
+    	"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+    	"bar_index": 7
+
+    },
+	"hidden": true
+}

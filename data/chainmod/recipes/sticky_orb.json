@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#n#",
+        "nCn",
+        "#n#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "C": {
+            "item": "minecraft:cobweb"
+        }
+    },
+    "result": {
+        "item": "nebchain:sticky_orb",
+        "count": 1
+    }
+}

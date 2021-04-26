@@ -1,0 +1,25 @@
+{
+	"type": "origins:action_over_time",
+	"name": "Weak Legs",
+	"description": "You aren't made to walk on land. Its hard for a squid but possible.",
+	"interval": 10,
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+			"effect": "minecraft:slowness",
+			"duration": 20,
+			"is_ambient": true,
+			"amplifier": 0,
+			"show_particles": false,
+			"show_icon": false
+		}
+	},
+	"condition": {
+		"type": "origins:in_block_anywhere",
+                "inverted": true,
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:water"
+		}
+	}
+}

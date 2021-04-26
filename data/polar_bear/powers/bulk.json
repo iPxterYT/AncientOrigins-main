@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"name": "Bulk",
+	"description": "Being from cold regions, your body has evolved more fat to create insulation. A result of this is being much bulkier and larger than usual.",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"value": 10,
+		"operation": "addition"
+	}
+}

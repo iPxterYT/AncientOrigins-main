@@ -1,0 +1,19 @@
+{
+	"type": "origins:prevent_item_use",
+	"name": "Necrovore",
+	"description": "Being a ghost, you can only satisfy your eternal hunger with the lives of mobs and players.",
+	"item_condition": {
+		"type": "origins:and",
+		"conditions": [{
+				"type": "origins:food"
+			},
+			{
+				"type": "origins:ingredient",
+				"ingredient": {
+					"tag": "netherexpansion:goldenapples"
+				},
+				"inverted": true
+			}
+		]
+	}
+}

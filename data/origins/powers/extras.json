@@ -1,0 +1,29 @@
+{
+	"type": "origins:multiple",
+	"hidden":true,
+	"fuckingcaps": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_speed",
+			"value": 0.01,
+			"operation": "addition",
+			"tick_rate": 10
+		}
+		
+	},
+	"attackpeed2": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.armor",
+			"value": -2,
+			"operation": "addition",
+			"tick_rate": 10
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "origins:f",
+			"comparison": ">=",
+			"compare_to": 10
+		}
+	}
+}

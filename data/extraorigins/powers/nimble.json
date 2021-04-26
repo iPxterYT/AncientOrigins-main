@@ -1,0 +1,36 @@
+{
+	"type": "origins:modify_damage_taken",
+	"loading_priority": 1,
+	"modifier": {
+		"name": "OW",
+		"value": -1,
+		"operation": "multiply_base"
+
+	},
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:name",
+				"name": "fall"
+			},
+			{
+				"type": "origins:name",
+				"name": "flyIntoWall"
+			},
+			{
+				"type": "origins:name",
+				"name": "cactus"
+			},
+			{
+				"type": "origins:name",
+				"name": "sweetBerryBush"
+			},
+			{
+				"type": "origins:name",
+				"name": "thorns"
+			}
+		]
+
+	},
+	"hidden": "true"
+}

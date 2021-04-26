@@ -1,0 +1,46 @@
+{
+	"powers": [
+		"ender_dragon:pigstep",
+		"ender_dragon:chainmail1",
+		"ender_dragon:passivebreajbuff",
+		"ender_dragon:immuno",
+		"ender_dragon:regenc",
+		"ender_dragon:balance",
+		"ender_dragon:sprint_track",
+		"ender_dragon:obby",
+		"ender_dragon:nom",
+		"ender_dragon:pincushion",
+		"ender_dragon:thorns",
+		"ender_dragon:crystal",
+		"ender_dragon:heavy",
+		"ender_dragon:pun",
+		"ender_dragon:air_swimming",	
+		"ender_dragon:air_swimmin",
+		"ender_dragon:scream",
+		"ender_dragon:puncc",
+		"ender_dragon:sleep",
+		"ender_dragon:power",
+		"ender_dragon:res",
+		"ender_dragon:fury",
+		"ender_dragon:end",
+		"ender_dragon:slapper",
+		"ender_dragon:bowdmg",
+		"ender_dragon:dragonpower",
+		"ender_dragon:size_mod_dummy",
+		"ender_dragon:jumpmod",
+		"ender_dragon:runmod",
+		"ender_dragon:def",
+		"ender_dragon:girth",
+		"ender_dragon:ouch",
+		"ender_dragon:cant",
+		"origins:no_shield"
+	
+		
+	
+	],
+	"icon":"minecraft:dragon_egg",
+	"order":4,
+	"impact":3,
+	"name": "Dragonkin",
+	"description": "The Ender Dragon's daughters are incredibly powerful forces of void energy with a burning thirst for revenge."
+}

@@ -1,0 +1,84 @@
+{
+	"name": "Thick Fur",
+	"description": "Your thick fur is not meant for warmer places, causing you to slow down when in warm biomes.",
+	"type": "origins:stacking_status_effect",
+	"min_stacks": 0,
+	"max_stacks": 1,
+	"duration_per_stack": 80,
+	"effects": {
+		"effect": "minecraft:slowness",
+"amplifier": 2,
+		"is_ambient": true,
+		"show_particles": false,
+		"show_icon": true
+	},
+	"condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:biome",
+				"biome": "minecraft:desert"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:desert_lakes"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:desert_hills"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:savannah"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:shattered_savannah"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:badlands"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:eroded_badlands"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:wooded_badlands_plateau"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:savannah_plateau"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:badlands_plateau"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:modified_badlands_plateau"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:shattered_savannah_plateau"
+			}, {
+				"type": "origins:biome",
+				"biome": "minecraft:nether_wastes"
+			}, {
+				"type": "origins:biome",
+				"biome": "minecraft:soul_sand_valley"
+			}, {
+				"type": "origins:biome",
+				"biome": "minecraft:crimson_forest"
+			}, {
+				"type": "origins:biome",
+				"biome": "minecraft:warped_forest"
+			},
+			{
+				"type": "origins:biome",
+				"biome": "minecraft:basalt_deltas"
+			}
+		]
+
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"type": "origins:active_self",
+	"description": "Press your primary button to enter panic, gaining speed but feeling tired after.",
+	"name": "Panic",
+        "key": {
+            "key": "key.origins.primary_active",
+                "continuous": false
+               },
+	"entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:food_level",
+			"comparison": ">=",
+			"compare_to": 3
+		},
+		"if_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type":"origins:execute_command",
+					"command":"playsound minecraft:entity.cat.hiss player @a[distance=..50] ~ ~ ~ 1 1 1",
+					"permission_level":4
+				},
+				{
+				"type":"origins:execute_command",
+					"command":"particle minecraft:angry_villager ~ ~ ~ 1 1 1 10 10",
+					"permission_level":4
+				},
+				
+				
+				{
+					"type": "origins:change_resource",
+					"resource": "origins:f",
+					"change": 300
+
+				}
+
+
+			]
+		}
+	},
+	"cooldown": 800,
+	"hud_render": {
+		"should_render": false,
+		"bar_index": 4
+	}
+}

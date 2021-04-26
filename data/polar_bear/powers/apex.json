@@ -1,0 +1,57 @@
+	{
+		"type": "origins:attribute",
+		"name": "Tundra's King",
+		"description": "Being in the cold makes you physically stronger.",
+		"modifier": {
+
+			"attribute": "minecraft:generic.attack_damage",
+			"value": 0.3,
+			"operation": "multiply_base"
+		},
+		"condition": {
+			"type": "origins:or",
+			"conditions": [{
+					"type": "origins:biome",
+					"biome": "minecraft:snowy_tundra"
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:snowy_mountains"
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:ice_spikes"
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:snowy_taiga"
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:snowy_taiga_hills"
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:snowy_taiga_mountains"
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:frozen_river"
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:snowy_beach"
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:frozen_ocean"
+				}, {
+					"type": "origins:biome",
+					"biome": "minecraft:deep_frozen_ocean"
+
+				}
+			]
+		}
+
+
+	}

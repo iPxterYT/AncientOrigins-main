@@ -1,0 +1,36 @@
+{
+	"type": "origins:multiple",
+	"name": "The Bee's Knees",
+	"description": "Bees shake in the rain, unless someone plays jazz.",
+	"sex": {
+		"type": "origins:shaking",
+		"condition": {
+			"type": "origins:in_rain"
+		}
+	},
+	"penis": {
+		"type": "origins:action_over_time",
+		"hidden": true,
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:chance",
+			"action": {
+				"type": "origins:and",
+				"actions": [{
+						"type": "origins:execute_command",
+						"command": "execute as @p run say According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyways. Because bees don't care what humans think is impossible.",
+						"permission_level": 4
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "particle minecraft:dripping_honey ~ ~ ~ 1 1 1 1 500 normal",
+						"permission_level": 4
+					}
+				]
+			},
+			"chance": 0.0000001
+
+
+		}
+	}
+}

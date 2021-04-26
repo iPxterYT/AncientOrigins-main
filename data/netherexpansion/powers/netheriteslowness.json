@@ -1,0 +1,21 @@
+{
+	"type": "origins:conditioned_attribute",
+        "name": "Fine Print",
+        "description": "Any tool or weapon better than stone will slow you down.",
+	"modifier": {
+		"attribute": "minecraft:generic.movement_speed",
+		"value": -0.010,
+		"operation": "addition",
+		"tick_rate": 10
+	},
+	"condition": {
+		"type": "origins:equipped_item",
+		"equipment_slot": "mainhand",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "netherexpansion:netheritetools"
+			}
+		}
+	}
+}

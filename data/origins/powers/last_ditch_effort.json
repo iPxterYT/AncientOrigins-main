@@ -1,0 +1,110 @@
+{
+    "type": "origins:multiple",
+    "name": "Last Ditch Effort",
+    "description": "When you get pushed to your limit, you automaticaly activate Surge of Fire if it's not on cooldown without taking any recoil damage but only lasting for 6 seconds. Due to extreme shock after the encounter, you need to calm down for some time.",
+    "cooldown": {
+        "type": "origins:resource",
+        "name": "Cooldown",
+        "min": 0,
+        "max": 3600,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 0,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "origins:last_ditch_effort_cooldown",
+                "comparison": "<",
+                "compare_to": 3600
+            }
+        },
+        "hidden": true
+    },
+    "cooldown_ticks": {
+        "hidden": true,
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "origins:last_ditch_effort_cooldown",
+            "change": 1
+        }
+    },
+    "passive": {
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "origins:surge_ability"
+                },
+                {
+                    "type": "origins:exhaust",
+                    "amount": 0.0325
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:surge_heat",
+                    "change": 1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:surge_counter",
+                    "change": 120
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins:last_ditch_effort_cooldown",
+                    "change": -3600
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 120,
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins:surge_heat",
+                        "change": -1
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.zombie_villager.cure"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle flame ~ ~ ~ 0 1 0 0.75 18",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:health",
+                    "comparison": "<=",
+                    "compare_to": 6
+                },
+                {
+                    "type": "origins:health",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins:surge_ability",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins:last_ditch_effort_cooldown",
+                    "comparison": "==",
+                    "compare_to": 3600
+                }
+            ]
+        }
+    }
+}

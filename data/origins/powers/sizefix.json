@@ -1,0 +1,10 @@
+{
+  "type": "origins:action_over_time",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "function origins:blaze",
+    "permission_level": 4
+  },
+  "interval": 250
+}

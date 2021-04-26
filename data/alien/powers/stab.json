@@ -1,0 +1,12 @@
+{
+  "type": "origins:attribute",
+  "name": "Stab Stab?",
+  "description": "Haven't stretched like this before, your attack reach is lower",
+  "modifier":
+    {
+      "name": "Extra Reach entity reach",
+      "attribute": "reach-entity-attributes:attack_range",
+      "value": -1,
+      "operation": "addition"
+    }
+}

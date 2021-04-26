@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#n#",
+        "nMn",
+        "#n#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "M": {
+            "item": "minecraft:music_disc_cat"
+        }
+    },
+    "result": {
+        "item": "nebchain:soft_orb",
+        "count": 1
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"type": "origins:modify_lava_speed",
+	"hidden": false,
+	"name": "Lava knowledge",
+	"description": "Due to your experiences in harsh nether lakes, moving through lava is much easier then ever before.",
+	"modifier": {
+		"operation": "multiply_total",
+		"value": 0.825
+	}
+}

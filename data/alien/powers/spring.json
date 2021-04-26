@@ -1,0 +1,30 @@
+{
+	"type": "origins:action_over_time",
+	"name": "Over Aerodyanmic",
+	"description": "You got hops for days, and the surface area of your body allows you be aerodynamic and glide.",
+	"interval": 5,
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effects": [{
+				"effect": "minecraft:jump_boost",
+				"duration": 10,
+				"is_ambient": true,
+				"amplifier": 2,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:slow_falling",
+				"duration": 10,
+				"is_ambient": true,
+				"amplifier": 1,
+				"show_particles": false,
+				"show_icon": false
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:sneaking",
+		"inverted": true
+	}
+}

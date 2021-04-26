@@ -1,0 +1,25 @@
+{
+  "type": "origins:restrict_armor",
+  "name": "Iron Pride",
+  "description": "As you are made of iron, you refuse to wear any material better than iron.",
+  "head": {
+    "type": "origins:armor_value",
+    "comparison": ">",
+    "compare_to": 2
+  },
+  "chest": {
+    "type": "origins:armor_value",
+    "comparison": ">",
+    "compare_to": 6
+  },
+  "legs": {
+    "type": "origins:armor_value",
+    "comparison": ">",
+    "compare_to": 5
+  },
+  "feet": {
+    "type": "origins:armor_value",
+    "comparison": ">",
+    "compare_to": 2
+  }
+}

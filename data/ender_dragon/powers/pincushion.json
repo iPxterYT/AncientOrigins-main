@@ -1,0 +1,24 @@
+{
+    "type": "origins:modify_damage_taken",
+	"hidden":true,
+    "modifier": {
+     "name": "OW",
+     "value": 0.25,
+     "operation": "multiply_total"
+
+    },
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [
+        {
+            "type": "origins:name",
+            "name": "arrow"
+        },
+        {
+            "type": "origins:name",
+            "name": "thrown"
+        }
+    ]
+
+    }
+}

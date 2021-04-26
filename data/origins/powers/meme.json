@@ -1,0 +1,21 @@
+{
+  "type": "origins:action_on_callback",
+  "hidden":true,
+  "entity_action_respawned": {
+    "type": "origins:and",
+    "actions":
+	[
+		{
+						"type": "origins:change_resource",
+						"resource": "origins:shellbuild",
+						"change": -12
+		},
+		{
+		"type":"origins:execute_command",
+		"command":"playsound minecraft:entity.shulker.open player @a[distance=..50] ~ ~ ~ 1 1",
+			"permission_level":4
+		}
+		
+	]
+  }
+}

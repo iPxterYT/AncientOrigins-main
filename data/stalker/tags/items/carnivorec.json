@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+	"cookie",
+	"enchanted_golden_apple",
+	"golden_apple",
+	"cake",
+        "honey_bottle",
+        "apple",
+        "melon_slice"
+  ]
+}

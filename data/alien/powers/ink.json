@@ -1,0 +1,23 @@
+{
+	"type": "origins:self_action_when_hit",
+	"name": "Surprise Ink",
+	"cooldown": 500,
+	"description": "Anything that hits you will be temporarily blinded.",
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "function alien:ink",
+		"permission_level": 4
+	},
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:name",
+				"name": "mob"
+			},
+			{
+				"type": "origins:name",
+				"name": "player"
+			}
+		]
+	}
+}

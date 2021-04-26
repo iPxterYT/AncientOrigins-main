@@ -1,0 +1,19 @@
+{
+	"replace": false,
+	"origins": [
+		"ender_dragon:ender_dragon",
+		"magpie:magpie",
+		"golems:golem",
+		"polar_bear:polar_bear",
+		"gold_origins:queen_bee",
+		"netherexpansion:withered",
+		"netherexpansion:damned",
+		"jet:jet",
+		"stalker:stalker",
+		"warper:warper",
+		"usernull:ghastly",
+		"alien:inkling",
+		"endermite:endermite"
+		
+	]
+}

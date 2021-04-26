@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+	"beef",
+        "chicken",
+        "mutton",
+        "porkchop",
+        "rabbit",
+        "cod",
+        "salmon",
+        "tropical_fish",
+        "rotten_flesh",
+        "rabbit_stew"
+  ]
+}

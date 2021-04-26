@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+		"attribute": "minecraft:generic.armor",
+		"operation": "addition",
+		"value": 4
+	},
+  "hidden": true,
+  "name": "Natural Armor",
+  "description": "Your scales offer some modicum of protection."
+}

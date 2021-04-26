@@ -1,0 +1,211 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+	"sex": {
+		"hidden": true,
+		"type": "origins:action_on_callback",
+		"entity_action_respawned": {
+			"type": "origins:change_resource",
+			"resource": "origins:phasemeter",
+			"change": 1000
+		}
+	},
+	"hitdrain": {
+		"type": "origins:self_action_on_hit",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "origins:phasemeter",
+			"change": -50
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "origins:phantomize"
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:amount",
+					"comparison": ">=",
+					"compare_to": 0.0
+				},
+				{
+					"type": "origins:projectile",
+					"projectile": "minecraft:trident",
+					"inverted": true
+				},
+				{
+					"type": "origins:projectile",
+					"projectile": "minecraft:arrow",
+					"inverted": true
+				},
+				{
+					"type": "origins:projectile",
+					"name": "minecraft:snowball",
+					"inverted": true
+				},
+				{
+					"type": "origins:projectile",
+					"name": "minecraft:egg",
+					"inverted": true
+				},
+				{
+					"type": "origins:projectile",
+					"name": "minecraft:fireworks_rocket",
+					"inverted": true
+				}
+			]
+		},
+		"cooldown": 1
+
+	},
+	"gethitdrain": {
+		"type": "origins:self_action_when_hit",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "origins:phasemeter",
+			"change": -70
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "origins:phantomize"
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+
+					"type": "origins:amount",
+					"comparison": ">=",
+					"compare_to": 3.0
+				},
+				{
+					"type": "origins:name",
+					"name": "fall",
+					"inverted": true
+				}
+			]
+		}
+	},
+	"drain": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "origins:phasemeter",
+			"change": -4
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "origins:phantomize"
+		}
+	},
+	"draininblock": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"hidden": true,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "origins:phasemeter",
+			"change": -18
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:power_active",
+					"power": "origins:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"inverted": true,
+					"block_condition": {
+						"type": "origins:offset",
+						"y": 1,
+						"condition": {
+							"type": "origins:in_tag",
+							"tag": "origins:air"
+
+						}
+					}
+				}
+			]
+		}
+	},
+	"regen": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "origins:phasemeter",
+			"change": 50
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "origins:phantomize",
+			"inverted": true
+		}
+
+	},
+	"phasedeath": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:damage",
+			"amount": 2,
+			"source": {
+				"name": "cramming",
+				"bypasses_armor": true
+			}
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:power_active",
+					"power": "origins:phantomize"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins:phasemeter",
+					"comparison": "<=",
+					"compare_to": 10
+
+				}
+			]
+		}
+	},
+	"phasephall": {
+		"type": "origins:modify_damage_taken",
+		"hidden": true,
+		"modifier": {
+			"operation": "multiply_base",
+			"value": -0.5
+		},
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "origins:phantomize"
+		}
+	},
+	"excelgay": {
+		"type": "origins:modify_break_speed",
+		"modifier": {
+			"value": -0.95,
+			"operation": "multiply_base"
+		},
+		"block_condition": {
+			"type": "origins:attachable"
+		},
+		"condition": {
+			"type": "origins:in_block",
+			"block_condition": {
+				"type": "origins:in_tag",
+				"tag": "origins:air",
+				"inverted": true
+			}
+
+		}
+
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"powers": [
+		"origins:fire_immunity",
+		"origins:lava_knowledge",
+		"origins:lava_vision",
+		"origins:nether_spawn",
+		"origins:burning_wrath",
+		"origins:hotblooded",
+		"origins:surge",
+		"origins:last_ditch_effort",
+		"origins:blazerods",
+		"origins:water_vulnerability",
+		"origins:cold_intolarant",
+		"origins:flame_particles_new",
+		"origins:damage_from_snowballs",
+		"origins:damage_from_potions",
+		"origins:blazedeath",
+		"origins:sizefix"
+	],
+	"icon": "minecraft:blaze_powder",
+	"impact": 3,
+	"order": 1,
+	"loading_priority": 1
+}

@@ -1,0 +1,29 @@
+  {
+  	"type": "origins:stacking_status_effect",
+        "name": "Out of Place",
+        "description": "You definitely don't belong in water. You're souls would likely dissolve.",
+  	"min_stacks": 0,
+  	"max_stacks": 1,
+  	"duration_per_stack": 30,
+  	"effects": {
+  		"effect": "minecraft:weakness",
+  		"is_ambient": true,
+                "amplifier": 2,
+  		"show_particles": false,
+  		"show_icon": true
+  	},
+  	"condition": {
+  		"type": "origins:or",
+  		"conditions": [{
+  				"type": "origins:fluid_height",
+  				"fluid": "minecraft:water",
+  				"comparison": ">",
+  				"compare_to": 0.0
+  			},
+  			{
+  				"type": "origins:in_rain"
+  			}
+  		]
+
+  	}
+  }

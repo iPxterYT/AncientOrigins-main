@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#n#",
+        "nNn",
+        "#n#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "nebchain:burning_orb",
+        "count": 1
+    }
+}

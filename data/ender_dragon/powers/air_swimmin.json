@@ -1,0 +1,135 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+	"hal": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:and",
+				"conditions": [{
+						"type": "origins:dimension",
+						"dimension": "minecraft:the_end"
+					},
+					{
+						"type": "origins:power_active",
+						"power": "ender_dragon:air_swimming"
+					},
+					{
+						"type": "origins:resource",
+						"resource": "ender_dragon:sprint_track",
+						"comparison": ">",
+						"compare_to": 0
+					},
+					{
+						"type": "origins:fall_flying"
+					}
+
+
+				]
+			},
+			"if_action": {
+
+				"type": "origins:add_velocity",
+				"space": "local",
+				"z": 0.25
+			}
+		}
+	},
+	"jal": {
+		"type": "origins:elytra_flight",
+		"render_elytra": true,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:dimension",
+					"dimension": "minecraft:the_end"
+				},
+				{
+					"type": "origins:power_active",
+					"power": "ender_dragon:air_swimming"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "ender_dragon:sprint_track",
+					"comparison": ">",
+					"compare_to": 0
+				}
+			]
+		}
+
+	},
+	"sex": {
+		"type": "origins:modify_damage_taken",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:dimension",
+					"dimension": "minecraft:the_end"
+				},
+				{
+					"type": "origins:power_active",
+					"power": "ender_dragon:air_swimming"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "ender_dragon:sprint_track",
+					"comparison": ">",
+					"compare_to": 0
+				}
+			]
+		},
+		"hidden": true,
+		"modifier": {
+			"name": "OW",
+			"value": -5,
+			"operation": "multiply_base"
+
+		},
+		"damage_condition": {
+			"type": "origins:or",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "fall"
+				},
+				{
+					"type": "origins:name",
+					"name": "flyIntoWall"
+				}
+			]
+
+		}
+	},
+	"pp": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:dimension",
+					"dimension": "minecraft:the_end"
+				},
+				{
+					"type": "origins:power_active",
+					"power": "ender_dragon:air_swimming"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "ender_dragon:sprint_track",
+					"comparison": ">",
+					"compare_to": 0
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:chance",
+			"action": {
+				"type": "origins:execute_command",
+				"command": "execute as @p run playsound minecraft:entity.ender_dragon.flap player @a[distance=..50] ~ ~ ~ 1",
+				"permission_level": 4
+			},
+			"chance": 0.33
+		}
+	}
+}

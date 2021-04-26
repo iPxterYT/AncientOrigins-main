@@ -1,0 +1,41 @@
+{
+	"type": "origins:restrict_armor",
+	"hidden": true,
+	"head": {
+		"type": "origins:or",
+		"inverted": true,
+		"conditions": [
+		]
+	},
+	"chest": {
+		"type": "origins:or",
+		"inverted": false,
+		"conditions": [{
+				"type": "origins:armor_value",
+				"comparison": "==",
+				"compare_to": 0
+
+
+			},
+			{
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:elytra"
+
+				}
+			}
+		]
+	},
+	"legs": {
+		"type": "origins:or",
+		"inverted": true,
+		"conditions": [
+		]
+	},
+	"feet": {
+		"type": "origins:or",
+		"inverted": true,
+		"conditions": [
+		]
+	}
+}

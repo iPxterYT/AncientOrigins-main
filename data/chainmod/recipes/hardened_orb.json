@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#n#",
+        "nSn",
+        "#n#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "S": {
+            "item": "minecraft:shulker_shell"
+        }
+    },
+    "result": {
+        "item": "nebchain:hardened_orb",
+        "count": 1
+    }
+}

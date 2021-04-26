@@ -1,0 +1,31 @@
+{
+	"type": "origins:target_action_on_hit",
+	"name": "Decaying Punch",
+	"description": "A Wither's touch causes decomposition. Flesh to ash, bone to dust.",
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+			"effect": "minecraft:wither",
+			"amplifier": 1,
+			"duration": 100,
+			"is_ambient": true
+		}
+	},
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:name",
+				"name": "arrow"
+			},
+			{
+				"type": "origins:name",
+				"name": "player"
+			}
+		]
+	},
+	"cooldown": 240,
+	"hud_render": {
+		"should_render": true,
+		"bar_index": 2
+	}
+}

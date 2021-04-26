@@ -1,0 +1,17 @@
+{
+	"type": "origins:action_over_time",
+	"name": "Hydrodynamic?",
+	"description": "You swim faster.",
+	"interval": 5,
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+			"effect": "minecraft:dolphins_grace",
+			"duration": 10,
+			"is_ambient": true,
+			"amplifier": 2,
+			"show_particles": false,
+			"show_icon": false
+		}
+	}
+}

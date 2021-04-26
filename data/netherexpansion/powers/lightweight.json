@@ -1,0 +1,25 @@
+{
+	"type": "origins:conditioned_attribute",
+	"name": "Light Weight",
+	"description": "You naturally move faster, but due to your lack of muscles, the heavier your armor, the slower you move.",
+	"modifier": {
+		"attribute": "minecraft:generic.movement_speed",
+		"value": 0.03,
+		"operation": "addition",
+		"tick_rate": 5
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+				"type": "origins:attribute",
+				"attribute": "minecraft:generic.armor",
+				"comparison": "<=",
+				"compare_to": 4.0
+			},
+			{
+				"type": "origins:sprinting"
+			}
+		]
+	},
+	"hidden": true
+}

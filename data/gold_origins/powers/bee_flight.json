@@ -1,0 +1,6 @@
+{
+    "type": "origins:elytra_flight",
+    "render_elytra": true,
+    "name":"Bee Wings",
+    "description": "You have a permanent elytra and slow falling effect. Hold shift to fall normally!"
+}

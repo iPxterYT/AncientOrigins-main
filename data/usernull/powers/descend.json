@@ -1,0 +1,23 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:slow_falling",
+        "duration": 10,
+        "amplifier": 2,
+        "show_particles": false,
+        "show_icon": false
+      }
+  },
+  "cooldown": 0,
+  "hud_render": {
+    "should_render": false
+  },
+  "key": {
+    "key": "key.sneak",
+    "continuous": true
+  },
+  "name": "Lighter Than Air",
+  "description": "Your body is filled with a mysterious gas that allows you to hover in the air. Use space to float up, and shift to float down."
+}

@@ -1,0 +1,11 @@
+{
+
+  "type": "origins:action_over_time",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:execute_command",
+	"command": "execute if @e[distance=..15,type=ender_crystal] run give @s minecraft:regeneration",
+    "permission_level": 4
+  },
+  "interval": 15
+}

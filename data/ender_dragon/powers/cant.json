@@ -1,0 +1,19 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "Chorus Lover",
+  "description": "Meat tates weird after so much chorus fruit. You prefer veggies and fish, and LOVE that fruit.",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient":{
+          "tag": "ender_dragon:no"
+        }
+      },
+      {
+        "type": "origins:food"
+      }
+    ]
+  }
+}

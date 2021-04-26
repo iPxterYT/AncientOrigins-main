@@ -1,0 +1,44 @@
+{
+	"type": "origins:prevent_item_use",
+	"item_condition": {
+	  "type": "origins:and",
+	  "conditions": [
+		{
+		  "type": "origins:food"
+		},
+		{
+		  "type": "origins:or",
+		  "conditions": [
+			{
+			  "type": "origins:ingredient",
+			  "ingredient": {
+				  "item": "honey_bottle"
+			  }
+			},
+			{    
+			  "type": "origins:ingredient",
+			  "ingredient": {
+				  "item": "enchanted_golden_apple"
+			  }
+			},
+			{    
+			  "type": "origins:ingredient",
+			  "ingredient": {
+				  "item": "golden_apple"
+			  }
+			},
+			{    
+			  "type": "origins:ingredient",
+			  "ingredient": {
+				  "item": "golden_carrot"
+			  }
+			}
+		  ],
+		  "inverted" : true
+		}
+	  ]
+	},
+	"hidden": false,
+	"name": "Royal Diet",
+	"description": "You can only eat bottles of honey and golden food"
+  }

@@ -1,0 +1,15 @@
+{
+  "type": "origins:modify_break_speed",
+  "block_condition": {
+    "type": "origins:attachable"
+  },
+  "condition": {
+    "type": "origins:using_effective_tool"
+  },
+  "modifier": {
+    "name": "Strong Arms stone break speed bonus",
+    "value": 0.03,
+    "operation": "addition"
+  },
+  "hidden": true
+}

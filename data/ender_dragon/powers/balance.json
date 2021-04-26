@@ -1,0 +1,20 @@
+{
+  "type": "origins:attribute",
+  "hidden": false,
+  "name": "Dragonsoul",
+  "description": "You hit hard, and get a burst of determination at low health.",
+  "modifiers": [
+    {
+      "name": "Extra Reach block reach",
+      "attribute": "reach-entity-attributes:reach",
+      "value": 0.41,
+      "operation": "addition"
+    },
+    {
+      "name": "Extra Reach entity reach",
+      "attribute": "reach-entity-attributes:attack_range",
+      "value": 0.41,
+      "operation": "addition"
+    }
+  ]
+}

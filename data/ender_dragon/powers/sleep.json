@@ -1,0 +1,6 @@
+{
+
+	"type": "origins:prevent_sleep",
+	"hidden":true,
+	"message": "Not what it seems."
+}

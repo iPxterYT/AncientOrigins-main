@@ -1,0 +1,29 @@
+{
+	"type": "origins:conditioned_attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.movement_speed",
+		"value": 0.025,
+		"operation": "addition",
+		"tick_rate": 5
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+				"type": "origins:attribute",
+				"attribute": "minecraft:generic.armor",
+				"comparison": ">=",
+				"compare_to": 5.0
+			},
+			{
+				"type": "origins:attribute",
+				"attribute": "minecraft:generic.armor",
+				"comparison": "<=",
+				"compare_to": 8
+			},
+                        {
+			"type": "origins:sprinting"
+                        }
+		]
+	},
+	"hidden": true
+}

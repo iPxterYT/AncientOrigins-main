@@ -1,0 +1,25 @@
+{
+	"replace": false,
+	"values": [
+		"cooked_beef",
+		"cooked_mutton",
+		"cooked_porkchop",
+		"cooked_chicken",
+		"cooked_rabbit",
+		"apple",
+		"golden_carrot",
+		"bread",
+		"carrot",
+		"mushroom_stew",
+		"pumpkin_pie",
+		"beetroot_soup",
+		"baked_potato",
+		"beef",
+		"chicken",
+		"mutton",
+		"porkchop",
+		"rabbit",
+		"rotten_flesh",
+		"rabbit_stew"
+	]
+}

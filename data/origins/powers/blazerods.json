@@ -1,0 +1,34 @@
+{
+    "type": "origins:target_action_on_hit",
+    "name": "Rod Specialty",
+    "description": "You deal extra damage using Blaze Rods and set others on fire upon striking them",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:set_on_fire",
+                "duration": 4
+            },
+            {
+                "type": "origins:damage",
+                "amount": 3,
+                "source": {
+                    "name": "onFire",
+                    "fire": true,
+                    "bypasses_armor": false
+                }
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:blaze_rod"
+            }
+        }
+    },
+    "cooldown": 0
+}

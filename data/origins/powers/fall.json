@@ -1,0 +1,35 @@
+{
+	"name": "Scales",
+	"hidden": true,
+	"description": "Your thick skin prevents against magic and normal damage, but prevents most armors from fitting.",
+	"type": "origins:action_on_callback",
+	"entity_action_respawned": {
+			"type": "origins:chance",
+			"action": {
+				"type": "origins:and",
+				"actions": [{
+
+						"type": "origins:execute_command",
+						"command": "give @s minecraft:elytra{display:{Name:'[{\"text\":\"Elytrian Wings\"}]',Lore:['[{\"text\":\"Why are they still twitching?\"}]']},Unbreakable:1,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1}]} 1",
+						"permission_level": 4
+					},
+					{
+
+						"type": "origins:execute_command",
+						"command": "title @a[distance=..10000000] actionbar {\"text\":\"How fare their wings, ripped clean of their body?\",\"bold\":true,\"color\":\"dark_blue\"}",
+						"permission_level": 4
+					},
+
+					{
+						"type": "origins:execute_command",
+						"command": "playsound minecraft:entity.ender_eye.death player @a[distance=..100] ~ ~ ~ 1 1",
+						"permission_level": 4
+					}
+				]
+			},
+			"chance": 0.005
+
+
+		
+	}
+}

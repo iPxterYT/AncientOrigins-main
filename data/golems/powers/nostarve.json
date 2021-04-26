@@ -1,0 +1,30 @@
+{
+	"type": "origins:invulnerability",
+	"name": "Isn't this a robot?",
+	"description": "You don't need to eat to live, you can't drown, and cacti can't damage your metal body.",
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:name",
+				"name": "starve"
+			},
+			{
+				"type": "origins:name",
+				"name": "drown"
+			},
+			{
+				"type": "origins:name",
+				"name": "cactus"
+			},
+			{
+				"type": "origins:name",
+				"name": "sting"
+			},
+			{
+				"type": "origins:name",
+				"name": "sweetBerryBush"
+			}
+		]
+	}
+}

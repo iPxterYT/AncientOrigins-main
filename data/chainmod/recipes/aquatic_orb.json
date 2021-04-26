@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#n#",
+        "nHn",
+        "#n#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "H": {
+            "item": "minecraft:heart_of_the_sea"
+        }
+    },
+    "result": {
+        "item": "nebchain:aquatic_orb",
+        "count": 1
+    }
+}

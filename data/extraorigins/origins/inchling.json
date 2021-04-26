@@ -1,0 +1,16 @@
+{
+  "powers": [
+  "extraorigins:scream",
+  "extraorigins:walljumpmeter",
+  "extraorigins:walljumpability",
+  "extraorigins:walljumpregen",
+	"extraorigins:bite_sized",
+	"extraorigins:fuckinchling",
+	"extraorigins:nimble",
+	"extraorigins:small_appetite"
+  ],
+  "icon": "anvil",
+  "loading_priority": 1,
+  "order": 1,
+  "impact": 3
+}

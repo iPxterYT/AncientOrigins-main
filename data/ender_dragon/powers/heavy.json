@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"hidden": true,
+	"name": "Heavy",
+	"description": "You are very heavy and are much harder to move.",
+	"modifiers": {
+		"attribute": "minecraft:generic.knockback_resistance",
+		"value": 0.65,
+		"operation": "addition"
+	}
+}

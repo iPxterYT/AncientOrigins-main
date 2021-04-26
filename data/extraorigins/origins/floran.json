@@ -1,0 +1,15 @@
+{
+  "powers": [
+	"extraorigins:green_thumb",
+	"extraorigins:photosynthesis",
+	"extraorigins:absorbing",
+	"extraorigins:flammable",
+	"extraorigins:delicate",
+	"extraorigins:nectarivore",
+	"extraorigins:size_mod_dummy"
+  ],
+  "icon": "oak_sapling",
+  "loading_priority": 1,
+  "order": 1,
+  "impact": 2
+}

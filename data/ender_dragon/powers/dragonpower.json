@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"name": "Sheer Size",
+	"description": "Your increased girth results in more health, but increased fall damage and lowered jump height.",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"value": 10,
+		"operation": "addition"
+		
+	}
+}

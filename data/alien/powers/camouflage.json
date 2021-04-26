@@ -1,0 +1,29 @@
+{
+	"type": "origins:action_over_time",
+	"name": "Camouflage",
+	"description": "Of course you'd beable to do this! Hold down sneak to go invisible and protect yourself.",
+	"interval": 5,
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effects": [{
+				"effect": "minecraft:invisibility",
+				"duration": 10,
+				"is_ambient": true,
+				"amplifier": 2,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:resistance",
+				"duration": 10,
+				"is_ambient": true,
+				"amplifier": 0,
+				"show_particles": false,
+				"show_icon": false
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:sneaking"
+	}
+}

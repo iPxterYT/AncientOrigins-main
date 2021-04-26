@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"golems:heavy",
+		"golems:metalbody",
+		"golems:bigboi",
+		"golems:sizefix",
+		"golems:res",
+		"golems:nostarve",
+                "golems:slow",
+                "golems:ironpride",
+                "golems:exploinvincible",
+                "golems:rechooseregen"
+	],
+	"icon": "iron_block",
+	"order": 15,
+	"impact": 2,
+	"name": "Golem",
+	"description": "Sentient metal beings made for the sole purpose of protecting others. Food, for them, is a biofuel."
+}

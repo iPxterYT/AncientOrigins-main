@@ -1,0 +1,15 @@
+{
+  "name": "Scales",
+  "description": "Your thick skin prevents against magic and normal damage, but prevents most armors from fitting.",
+  "type": "origins:action_on_callback",
+  "entity_action_respawned": {
+    "type": "origins:execute_command",
+    "command": "effect give @s minecraft:saturation 10 2",
+    "permission_level": 4
+  },
+  "entity_action_chosen":{
+	"type": "origins:execute_command",
+    "command": "effect give @s minecraft:saturation 10 2",
+    "permission_level": 4
+  }
+}

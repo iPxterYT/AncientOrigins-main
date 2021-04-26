@@ -1,0 +1,14 @@
+{
+	"type": "origins:self_action_on_hit",
+	"hidden": true,
+	"entity_action": {
+		"type": "origins:feed",
+		"food": 2,
+		"saturation": 0.5
+	},
+	"cooldown": 20,
+	"hud_render": {
+		"should_render": true,
+		"bar_index": 5
+	}
+}

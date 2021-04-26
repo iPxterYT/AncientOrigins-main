@@ -1,0 +1,29 @@
+{
+	"powers": [
+		"origins:nether_spawn",
+		"origins:fire_immunity",
+		"netherexpansion:lightweight",
+		"netherexpansion:size_mod_dummy",
+		"netherexpansion:lightweight2",
+		"netherexpansion:lightweight3",
+		"netherexpansion:lightweight4",
+		"netherexpansion:lightweight5",
+		"netherexpansion:lightweighttoughness",
+		"netherexpansion:lightweighttoughness2",
+		"netherexpansion:lightweighttoughness3",
+		"netherexpansion:lightweighttoughness4",
+		"netherexpansion:witherstrike",
+		"netherexpansion:witherimmunity",
+		"netherexpansion:goldenslowness",
+		"netherexpansion:ironslowness",
+		"netherexpansion:diamondslowness",
+		"netherexpansion:netheriteslowness",
+                "netherexpansion:undead",
+                "netherexpansion:lava_vision"
+	],
+	"icon": "minecraft:stone_sword",
+	"order": 6,
+	"impact": 3,
+	"name": "Withered",
+	"description": "In disbelief of their master's death, they continue to attempt to reassemble him, no matter the cost."
+}

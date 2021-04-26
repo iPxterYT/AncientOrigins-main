@@ -1,0 +1,1 @@
+summon minecraft:tnt ~ ~1.6 ~ {Fuse:0}

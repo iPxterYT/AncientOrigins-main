@@ -1,0 +1,54 @@
+{
+    "type": "origin:multiple",
+    "name": "Cold intolerant",
+    "description": "Overworld is no place for blazes, because of this, you move slower in cold biomes",
+    "slowness": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "duration": 200,
+                "amplifier": 0,
+                "show_particles": false
+            }
+        },
+        "condition": {
+            "type": "origins:biome",
+            "biomes": [
+                "minecraft:snowy_tundra",
+                "minecraft:snowy_mountains",
+                "minecraft:ice_spikes",
+                "minecraft:mountains",
+                "minecraft:wooded_mountains",
+                "minecraft:mountain_edge",
+                "minecraft:snowy_taiga",
+                "minecraft:snowy_taiga_hills",
+                "minecraft:snowy_taiga_mountains",
+                "minecraft:deep_frozen_ocean",
+                "minecraft:frozen_ocean"
+            ]
+        }
+    },
+    "shake": {
+        "type": "origins:shaking",
+        "hidden": true,
+        "condition": {
+            "type": "origins:biome",
+            "biomes": [
+                "minecraft:snowy_tundra",
+                "minecraft:snowy_mountains",
+                "minecraft:ice_spikes",
+                "minecraft:mountains",
+                "minecraft:wooded_mountains",
+                "minecraft:mountain_edge",
+                "minecraft:snowy_taiga",
+                "minecraft:snowy_taiga_hills",
+                "minecraft:snowy_taiga_mountains",
+                "minecraft:deep_frozen_ocean",
+                "minecraft:frozen_ocean"
+            ]
+        }
+    }
+}

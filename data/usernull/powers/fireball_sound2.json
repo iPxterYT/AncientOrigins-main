@@ -1,0 +1,15 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+   
+      "type": "origins:execute_command",
+      "command":"/playsound minecraft:entity.ghast.shoot player @a[distance=..70] ~ ~ ~ 1 1",
+	  "permission_level":4
+    
+  },
+  "cooldown": 200,
+  "hud_render": {
+    "should_render": false
+  },
+  "hidden": true
+}

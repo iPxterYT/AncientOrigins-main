@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"name": "Delicate",
+	"description": "Small fox paws and solid earth don't mix.",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"value": -4,
+		"operation": "addition"
+		
+	}
+}

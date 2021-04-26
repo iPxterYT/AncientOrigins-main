@@ -1,0 +1,9 @@
+{
+	"type": "origins:attribute",
+	"hidden": true,
+	"modifiers": {
+			"attribute": "minecraft:generic.attack_speed",
+			"value": 0.75,
+			"operation": "addition"
+		}
+}

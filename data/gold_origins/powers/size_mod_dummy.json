@@ -1,0 +1,11 @@
+{
+
+  "type": "origins:action_over_time",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:execute_command",
+	"command": "function gold_origins:first",
+    "permission_level": 4
+  },
+  "interval": 250
+}

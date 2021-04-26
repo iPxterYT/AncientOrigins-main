@@ -1,0 +1,12 @@
+{
+	"type": "origins:swimming",
+	"hidden": true,
+	"name": "Magma Swim",
+	"description": "Lava runs are a common activity for those without skin.",
+	"condition": {
+		"type": "origins:fluid_height",
+		"fluid": "minecraft:lava",
+		"comparison": ">",
+		"compare_to": 0.0
+	}
+}

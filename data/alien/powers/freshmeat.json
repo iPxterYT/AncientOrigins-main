@@ -1,0 +1,19 @@
+{
+	"type": "origins:modify_food",
+	"name": "Fresh Meat",
+	"description": "Why would you ruin a perfectly good meal with fire? Raw meat tastes better than anything!",
+	"item_condition": {
+		"type": "origins:ingredient",
+		"ingredient": {
+			"tag": "alien:rawmeat"
+		}
+	},
+	"food_modifier": {
+		"operation": "multiply_base",
+		"value": 1.3
+	},
+	"saturation_modifier": {
+		"operation": "multiply_base",
+		"value": 1.3
+	}
+}

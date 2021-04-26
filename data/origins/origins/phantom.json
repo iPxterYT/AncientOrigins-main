@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"origins:phantomize",
+		"origins:master_of_phase",
+		"origins:phasedeathmeter",
+		"origins:phasemeter",
+		"origins:translucent",
+		"origins:phasing",
+		"origins:invisibility",
+		"origins:burn_in_daylight",
+		"origins:fragile",
+"origins:size_mod_dummy"
+	],
+	"icon": "minecraft:phantom_membrane",
+        "loading_priority": 1,
+	"order": 2,
+	"impact": 3
+}

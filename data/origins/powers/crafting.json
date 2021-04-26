@@ -1,0 +1,48 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+	"name": "Firesmith",
+	"description": "You are able to craft chainmail with some effort.",
+	"chainlink": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "origins:1",
+
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				"###",
+				"###",
+				"###"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:string"
+				}
+			},
+			"result": {
+				"item": "minecraft:cobweb",
+				"count": 1
+
+			}
+		}
+	},
+	"chainmail_plating": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "origins:2",
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				"#"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:white_wool"
+				}
+			},
+			"result": {
+				"item": "minecraft:string",
+				"count": 4
+			}
+		}
+	}
+}

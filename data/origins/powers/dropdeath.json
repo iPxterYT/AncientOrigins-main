@@ -1,0 +1,37 @@
+{
+	"name": "Scales",
+	"hidden": true,
+	"description": "Your thick skin prevents against magic and normal damage, but prevents most armors from fitting.",
+	"type": "origins:action_on_callback",
+	"entity_action_respawned": {
+		"type": "origins:chance",
+		"action": {
+			"type": "origins:and",
+			"actions": [{
+
+					"type": "origins:execute_command",
+					"command": "title @a actionbar {\"text\":\"How fare their wings, ripped clean of their body?\",\"bold\":true,\"color\":\"dark_purple\"}",
+					"permission_level": 4
+				},
+				{
+
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.elder_guardian.curse player @a ~ ~ ~",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "function origins:dropdeath",
+					"permission_level": 4
+				}
+			]
+		},
+		"chance": 0.001
+
+
+
+
+
+
+	}
+}

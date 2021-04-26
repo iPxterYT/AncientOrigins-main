@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"origins:arthropod",
+		"origins:fragile",
+		"gold_origins:size_mod_dummy",
+		"gold_origins:bee_flight",
+		"gold_origins:bee_lightweight",
+		"gold_origins:honeydiet",
+		"gold_origins:nectar_particles",
+		"gold_origins:honey_walker",
+		"gold_origins:splash_honey",
+		"gold_origins:honey_generation",
+		"gold_origins:poison_stinger",
+		"gold_origins:bees_knees"
+	],
+	"icon": "minecraft:honeycomb",
+	"order": 20,
+	"impact": 2,
+	"name": "Queen Bee",
+	"description": "Descended from bee royalty, the Queen Bee is adept at supporting their allies with honey and gracefully buzzing around the world. Rebuild your hive and bring glory to your bee brethren."
+}

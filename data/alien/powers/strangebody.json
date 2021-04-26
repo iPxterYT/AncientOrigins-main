@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"name": "Strange Body",
+	"description": "Your body is very elastic, thus your attack speed is a bit faster.",
+	"modifiers": {
+			"attribute": "minecraft:generic.attack_speed",
+			"value": 0.50,
+			"operation": "addition"
+		}
+}

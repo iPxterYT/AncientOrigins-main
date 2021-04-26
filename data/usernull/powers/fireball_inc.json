@@ -1,0 +1,28 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"hidden": true,
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [{
+				"type": "origins:change_resource",
+				"resource": "usernull:fireball_deathcheck",
+				"change": 1
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:resource",
+					"resource": "usernull:fireball_deathcheck",
+					"comparison": "==",
+					"compare_to": 990
+				},
+				"if_action": {
+					"type": "origins:execute_command",
+					"command": "function usernull:fire",
+					"permission_level": 4
+				}
+			}
+		]
+	}
+}

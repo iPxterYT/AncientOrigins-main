@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:apple",
+	"minecraft:dried_kelp",
+	"minecraft:melon_slice",
+	"minecraft:poisonous_potato",
+	"minecraft:potato",
+	"minecraft:beef",
+	"minecraft:chicken",
+	"minecraft:mutton",
+	"minecraft:porkchop",
+	"minecraft:rabbit",
+	"minecraft:sweet_berries",
+	"minecraft:tropical_fish",
+	"minecraft:spider_eye",
+	"minecraft:rotten_flesh",
+	"minecraft:salmon",
+	"minecraft:cod"
+	
+	
+	]
+}

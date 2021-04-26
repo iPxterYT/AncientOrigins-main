@@ -1,0 +1,13 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "value": 0.5,
+      "operation": "multiply_total"
+    },
+    "damage_condition": {
+      "type": "origins:projectile",
+      "projectile": "minecraft:arrow"
+    },
+    "name": "Tight Rubbery Skin",
+    "description": "Be wary of sharp points, they'll make you burst! Arrows, thorns, and cacti deal 50% more damage."
+}

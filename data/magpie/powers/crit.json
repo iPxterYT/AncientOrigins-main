@@ -1,0 +1,15 @@
+{
+	"type": "origins:attribute",
+	"condition": {
+		"type": "origins:sprinting"
+	},
+	"modifier": {
+		"attribute": "minecraft:generic.attack_damage",
+		"operation": "multiply_base",
+		"value": 0.25
+
+	},
+	"hidden": false,
+	"name": "Swoop Attack",
+	"description": "Deal 25% more damage on a crit!"
+}

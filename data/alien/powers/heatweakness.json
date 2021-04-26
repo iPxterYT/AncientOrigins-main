@@ -1,0 +1,42 @@
+{
+	"type": "origins:modify_damage_taken",
+        "name": "Cold Blooded",
+        "description": "Your body is cold and squishy, explosions and fire do extra damage.",
+	"modifier": {
+		"value": 1.2,
+		"operation": "multiply_base"
+	},
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:name",
+				"name": "hotFloor"
+			},
+			{
+				"type": "origins:name",
+				"name": "onFire"
+			},
+			{
+				"type": "origins:name",
+				"name": "inFire"
+			},
+			{
+				"type": "origins:name",
+				"name": "lava"
+			},
+			{
+				"type": "origins:name",
+				"name": "fireworks"
+			},
+			{
+				"type": "origins:name",
+				"name": "explosion"
+			},
+			{
+				"type": "origins:name",
+				"name": "explosion.player"
+			}
+		]
+	}
+
+}

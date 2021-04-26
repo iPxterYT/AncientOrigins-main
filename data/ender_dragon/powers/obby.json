@@ -1,0 +1,13 @@
+{
+  "hidden": true,
+  "type": "origins:modify_break_speed",
+  "modifier": {
+    "name": "no obby",
+    "value": -1,
+    "operation": "multiply_total"
+  },
+  "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "ender_dragon:obsidian"
+      }
+}

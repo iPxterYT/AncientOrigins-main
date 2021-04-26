@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"origins:elytra",
+		"origins:dropdeath",
+		"origins:fall",
+		"origins:launch_into_air",
+		"origins:aerial_combatant",
+		"origins:light_armor",
+		"origins:claustrophobia",
+		"origins:more_kinetic_damage",
+		"origins:size_mod_dummy",
+		"origins:fucking"
+	],
+	"icon": "minecraft:elytra",
+	"order": 3,
+	"loading_priority": 1,
+	"impact": 1
+}

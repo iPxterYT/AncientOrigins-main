@@ -1,0 +1,29 @@
+{
+	"powers": [
+		"origins:nether_spawn",
+		"origins:fire_immunity",
+		"origins:fall_immunity",
+		"usernull:descend",
+		"usernull:fireball_dom",
+		"usernull:fireball_deathcheck",
+		"usernull:fireball_dec",
+		"usernull:fireball_inc",
+		"usernull:inflated",
+		"usernull:float",
+		"usernull:scary_arrows",
+		"usernull:no_armor",
+		"usernull:sensitive",
+		"usernull:fireball_sound",
+		"usernull:fireball_sound2",
+		"usernull:fatigued_flyer",
+		"usernull:fatigued_flyer2",
+		"usernull:wingless",
+		"usernull:attribute_nerf"
+	],
+	"icon": "minecraft:ghast_tear",
+	"order": 4,
+	"impact": 3,
+	"name": "Ghastly",
+	"unchooseable":true,
+	"description": "(UNCHOOSEABLE) You are a distant relative of the floating orginisms called Ghasts. A sad species, gifted the ability of flight... and fireballs!"
+}

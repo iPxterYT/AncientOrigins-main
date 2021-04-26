@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#n#",
+        "nFn",
+        "#n#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "F": {
+            "item": "minecraft:feather"
+        }
+    },
+    "result": {
+        "item": "nebchain:feathered_orb",
+        "count": 1
+    }
+}

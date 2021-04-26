@@ -1,0 +1,76 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+	"fuckingcaps": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_speed",
+			"value": 0.1,
+			"operation": "addition",
+			"tick_rate": 10
+		}
+
+	},
+	"jal": {
+		"type": "origins:modify_damage_taken",
+		"condition":{
+		"type": "origins:resource",
+		"resource": "jet:toggle",
+		"comparison": "==",
+		"compare_to":1
+		},
+		"hidden": true,
+		"modifier": {
+			"name": "OW",
+			"value": -5,
+			"operation": "multiply_base"
+
+		},
+		"damage_condition": {
+			"type": "origins:or",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "fall"
+				},
+				{
+					"type": "origins:name",
+					"name": "flyIntoWall"
+				}
+			]
+
+		}
+	},
+	"attackpeed": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_speed",
+			"value": 2.5,
+			"operation": "addition",
+			"tick_rate": 10
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "jet:toggle",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"yourmom": {
+		"type": "origins:action_over_time",
+
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "effect give @s minecraft:saturation 1 0",
+			"permission_level": 4
+		},
+		"interval": 30,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "jet:toggle",
+			"comparison": "==",
+			"compare_to": 1
+
+		}
+	}
+
+}

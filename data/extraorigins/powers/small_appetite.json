@@ -1,0 +1,9 @@
+{
+  "type": "origins:modify_exhaustion",
+  "loading_priority": 1,
+  "modifier": {
+	"name": "Origin modifier",
+	"value": -0.75,
+	"operation": "multiply_base"
+  }
+}

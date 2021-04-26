@@ -1,0 +1,38 @@
+{
+	"type": "origins:target_action_on_hit",
+	"name": "Hunger",
+	"description": "Their souls are the only thing that satiate the eternal hunger. Their souls are yours for the taking. Fear slows them down.",
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effects": [{
+				"effect": "minecraft:slowness",
+				"amplifier": 1,
+				"duration": 120,
+				"is_ambient": true
+			},
+			{
+				"effect": "minecraft:mining_fatigue",
+				"amplifier": 1,
+				"duration": 120,
+				"is_ambient": true
+			}
+		]
+	},
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:name",
+				"name": "arrow"
+			},
+			{
+				"type": "origins:name",
+				"name": "player"
+			}
+		]
+	},
+	"cooldown": 320,
+	"hud_render": {
+		"should_render": true,
+		"bar_index": 4
+	}
+}

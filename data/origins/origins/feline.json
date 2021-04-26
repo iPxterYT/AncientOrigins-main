@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"origins:natural_hunter",
+		"origins:panik",
+		"origins:memem",
+		"origins:nya",
+		"origins:extras",
+		"origins:fall_immunity",
+		"origins:sprint_jump",
+		"origins:nine_lives",
+		"origins:weak_arms",
+		"origins:scare_creepers",
+		"origins:cat_vision",
+		"origins:size_mod_dummy",
+		"origins:f",
+		"origins:g",
+		"origins:felinereg"
+	],
+	"icon": "minecraft:orange_wool",
+	"loading_priority": 1,
+	"order": 0,
+	"impact": 2
+}

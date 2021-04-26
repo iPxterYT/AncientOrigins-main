@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nebchain:aquatic_orb"
+        },
+        {
+            "item": "nebchain:aerodynamic_orb"
+        },
+        {
+            "item": "nebchain:distorted_orb"
+        },
+        {
+            "item": "nebchain:feathered_orb"
+        },
+        {
+            "item": "nebchain:hardened_orb"
+        },
+        {
+            "item": "nebchain:haunted_orb"
+        },
+        {
+            "item": "nebchain:soft_orb"
+        },
+        {
+            "item": "nebchain:burning_orb"
+        },
+        {
+            "item": "nebchain:sticky_orb"
+        }
+    ],
+    "result": {
+        "item": "origins:orb_of_origin",
+        "count": 1
+    }
+}

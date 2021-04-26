@@ -1,0 +1,44 @@
+{
+
+	"type": "origins:action_over_time",
+	"interval": 3,
+	"condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:sprinting",
+				"inverted": true
+			},
+			{
+				"type": "origins:sneaking"
+			},
+			
+      
+			{
+			"type": "origins:in_block_anywhere",
+						"block_condition": {
+							"type": "origins:block",
+							"block": "minecraft:water"
+						}
+			}
+				
+			
+		]
+
+	},
+	"hidden": true,
+	"entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "jet:toggle",
+			"comparison": "==",
+			"compare_to": 0
+		},
+		"if_action": {
+			"type": "origins:change_resource",
+			"resource": "jet:sickomode",
+			"change": -25
+		}
+
+	}
+}

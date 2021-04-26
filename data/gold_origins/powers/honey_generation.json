@@ -1,0 +1,84 @@
+{
+    "type": "origins:multiple",
+    "honey_crafting":{
+        "type": "origins:recipe",
+        "recipe": {
+        "id": "gold_origins:honey_generation/honey_crafting",
+        "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "tag": "minecraft:flowers"
+                },
+                {
+                    "tag": "minecraft:flowers"
+                },
+                {
+                    "tag": "minecraft:flowers"
+                },
+                {
+                    "tag": "minecraft:flowers"
+                },
+                {
+                    "item": "minecraft:glass_bottle"
+                },
+                {
+                    "tag": "minecraft:flowers"
+                },
+                {
+                    "tag": "minecraft:flowers"
+                },
+                {
+                    "tag": "minecraft:flowers"
+                },
+                {
+                    "tag": "minecraft:flowers"
+                }
+            ],
+            "result": {
+                "item": "minecraft:honey_bottle",
+                "count": 1
+            }
+        }
+    },
+    "honey_conversion":{
+        "type": "origins:recipe",
+        "recipe": {
+        "id": "gold_origins:honey_generation/honey_conversion",
+        "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:honey_block"
+                }
+            ],
+            "result": {
+                "item": "minecraft:honeycomb_block",
+                "count": 1
+            }
+        }
+    },
+    "honey_conversion_alchemy_overload":{
+        "type": "origins:recipe",
+        "recipe": {
+        "id": "gold_origins:honey_generation/honey_conversion_alchemy_overload",
+        "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:honeycomb_block"
+                }
+            ],
+            "result": {
+                "item": "minecraft:honey_block",
+                "count": 1
+            }
+        }
+    },
+    "constant_effort":{
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "value": 0.6,
+            "operation": "multiply_base"
+        }
+    },
+    "name":"Honey Production",
+    "description": "You can craft honey bottles out of flowers and an empty bottle, but all that work makes you hungry.  You can also convert honey blocks into honeycomb blocks, and vice versa!"
+}
